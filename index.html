@@ -956,25 +956,29 @@
         <a href="#" aria-label="X / Twitter">x</a>
       </div>
     </div>
-
-    <form class="contact-form reveal" onsubmit="event.preventDefault(); this.reset(); document.getElementById('formMsg').style.display='block';">
+<form class="contact-form reveal"
+      action="https://formsubmit.co/yalgaarho3@gmail.com"
+      method="POST">
+<input type="hidden" name="_subject" value="New PixelTone Website Enquiry">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
       <div class="form-row">
         <div>
           <label for="fname">Full name</label>
-          <input id="fname" type="text" required placeholder="Your name">
+          <input id="fname" name="Full Name" type="text" required placeholder="Your name">
         </div>
         <div>
           <label for="fphone">Phone</label>
-          <input id="fphone" type="tel" required placeholder="+91 00000 00000">
+          <input id="fphone" name="Phone" type="tel" required placeholder="+91 00000 00000">
         </div>
       </div>
       <div>
         <label for="femail">Email</label>
-        <input id="femail" type="email" required placeholder="you@company.com">
+        <input id="femail" name="Email" type="email" required placeholder="you@company.com">
       </div>
       <div>
         <label for="finterest">I'm interested in</label>
-        <select id="finterest">
+        <select id="finterest" name="Intrested In">
           <option>Boardroom / Corporate AV</option>
           <option>Education Spaces</option>
           <option>Video Conferencing</option>
@@ -984,7 +988,7 @@
       </div>
       <div>
         <label for="fmsg">Tell us about your space</label>
-        <textarea id="fmsg" placeholder="Room size, current setup, timeline..."></textarea>
+        <textarea id="fmsg" name="Message" placeholder="Room size, current setup, timeline..."></textarea>
       </div>
       <button type="submit" class="btn btn-dark" style="justify-self:start;">Send Enquiry</button>
       <p class="form-note" id="formMsg" style="display:none; color:var(--red); font-weight:600;">Thanks — this is a static demo form. Connect it to a form service (e.g. Formspree) to receive real submissions.</p>
