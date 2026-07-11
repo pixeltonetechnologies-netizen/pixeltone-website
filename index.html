@@ -9,42 +9,55 @@
 
 <title>PixelTone Technologies | Smart Workplace Solutions</title>
 
+<meta name="description"
+content="Audio Visual, Unified Communications, IT Infrastructure & Smart Workplace Solutions">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
-
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<!-- ================= Loader ================= -->
+<!--==========================
+LOADER
+===========================-->
 
 <div class="loader">
 
 <div class="loader-logo">
 
-Pixel<span>Tone</span>
+<img src="logo.png" alt="PixelTone">
 
 </div>
 
 </div>
 
-<!-- ================= Header ================= -->
+<!--==========================
+HEADER
+===========================-->
 
-<header>
+<header id="header">
 
 <div class="container">
 
+<div class="navbar">
+
 <div class="logo">
 
-<img src="assets/logo/logo.png" alt="PixelTone Logo">
+<a href="#">
+
+<img src="logo.png" alt="PixelTone Logo">
+
+</a>
 
 </div>
 
@@ -52,7 +65,7 @@ Pixel<span>Tone</span>
 
 <ul>
 
-<li><a href="#">Home</a></li>
+<li><a href="#" class="active">Home</a></li>
 
 <li><a href="#">Solutions</a></li>
 
@@ -68,9 +81,15 @@ Pixel<span>Tone</span>
 
 </nav>
 
-<div class="header-btn">
+<div class="nav-right">
 
-<a href="#">Get Quote</a>
+<a href="#" class="btn-primary">
+
+Request Quote
+
+</a>
+
+</div>
 
 </div>
 
@@ -78,23 +97,43 @@ Pixel<span>Tone</span>
 
 </header>
 
-<!-- ================= Hero ================= -->
+<!--==========================
+HERO
+===========================-->
 
 <section class="hero">
 
-<div class="hero-bg"></div>
+<div class="hero-background">
 
-<div class="container hero-grid">
+<div class="gradient-one"></div>
 
-<div class="hero-content">
+<div class="gradient-two"></div>
 
-<h5>TECHNOLOGY INTEGRATION COMPANY</h5>
+<div class="grid"></div>
+
+</div>
+
+<div class="container">
+
+<div class="hero-wrapper">
+
+<div class="hero-left">
+
+<span class="sub-title">
+
+Technology Integration Company
+
+</span>
 
 <h1>
 
 Transforming
 
-<span>Modern Workplaces</span>
+<span>
+
+Modern Workplaces
+
+</span>
 
 Through
 
@@ -104,23 +143,43 @@ AV, UC & IT
 
 <p>
 
-PixelTone Technologies delivers enterprise-grade Audio Visual,
+PixelTone Technologies designs and delivers intelligent Audio Visual,
 
 Unified Communications,
 
-Networking and Smart Workplace Solutions across India.
+IT Infrastructure,
+
+Networking,
+
+Digital Signage,
+
+Control Systems,
+
+Collaboration Spaces,
+
+and Smart Workplace Solutions for Enterprise,
+
+Education,
+
+Healthcare,
+
+Hospitality,
+
+Government,
+
+Retail and Commercial Projects.
 
 </p>
 
 <div class="hero-buttons">
 
-<a href="#" class="primary-btn">
+<a href="#" class="btn-primary">
 
 Explore Solutions
 
 </a>
 
-<a href="#" class="secondary-btn">
+<a href="#" class="btn-secondary">
 
 Contact Us
 
@@ -130,67 +189,101 @@ Contact Us
 
 <div class="hero-stats">
 
-<div>
+<div class="stat-box">
 
-<h2>250+</h2>
+<h2>
 
-<p>Projects Delivered</p>
+250+
 
-</div>
-
-<div>
-
-<h2>50+</h2>
-
-<p>Technology Partners</p>
-
-</div>
-
-<div>
-
-<h2>15+</h2>
-
-<p>Years Experience</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="hero-image">
-
-<div class="glass-card card1">
-
-<i class="fa-solid fa-display"></i>
-
-<h3>Professional AV</h3>
+</h2>
 
 <p>
 
-Display
-
-LED
-
-Projection
-
-Video Walls
+Projects Delivered
 
 </p>
 
 </div>
 
-<div class="glass-card card2">
+<div class="stat-box">
 
-<i class="fa-solid fa-video"></i>
+<h2>
 
-<h3>Unified Communication</h3>
+50+
+
+</h2>
 
 <p>
 
-Teams Rooms
+Technology Partners
+
+</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>
+
+15+
+
+</h2>
+
+<p>
+
+Years Experience
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="floating-card">
+
+<i class="fa-solid fa-display"></i>
+
+<h3>
+
+Professional AV
+
+</h3>
+
+<p>
+
+LED Display
+
+Projection
+
+Video Wall
+
+Signal Distribution
+
+</p>
+
+</div>
+
+<div class="floating-card">
+
+<i class="fa-solid fa-video"></i>
+
+<h3>
+
+Unified Communications
+
+</h3>
+
+<p>
+
+Microsoft Teams
 
 Zoom Rooms
+
+Wireless Collaboration
 
 Conference Systems
 
@@ -198,19 +291,25 @@ Conference Systems
 
 </div>
 
-<div class="glass-card card3">
+<div class="floating-card">
 
 <i class="fa-solid fa-network-wired"></i>
 
-<h3>IT Infrastructure</h3>
+<h3>
+
+IT Infrastructure
+
+</h3>
 
 <p>
 
 Networking
 
-Connectivity
+Structured Cabling
 
-Security
+Switching
+
+Enterprise Connectivity
 
 </p>
 
@@ -220,123 +319,87 @@ Security
 
 </div>
 
+</div>
+
+<div class="scroll-down">
+
+<i class="fa-solid fa-angle-down"></i>
+
+</div>
+
 </section>
 
-<!-- ================= Trusted ================= -->
+<!--==========================
+TRUSTED BY
+===========================-->
 
 <section class="trusted">
 
 <div class="container">
 
-<h2>
+<div class="section-heading">
+
+<span>
 
 Trusted Technology Partners
 
-</h2>
-
-<div class="logos">
-
-<div>Crestron</div>
-
-<div>QSC</div>
-
-<div>Cisco</div>
-
-<div>Logitech</div>
-
-<div>Yealink</div>
-
-<div>Poly</div>
-
-<div>Samsung</div>
-
-<div>LG</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= About ================= -->
-
-<section class="about">
-
-<div class="container">
-
-<div class="about-left">
-
-<h5>ABOUT PIXELTONE</h5>
+</span>
 
 <h2>
 
-Building Intelligent
-
-Workspaces
+Building Smart Connected Workplaces
 
 </h2>
 
-<p>
+</div>
 
-We help organizations create connected,
+<div class="partner-slider">
 
-collaborative,
+<div class="partner-item">
 
-and intelligent work environments through
-
-best-in-class AV,
-
-UC and IT technologies.
-
-</p>
-
-<ul>
-
-<li>✔ Smart Meeting Rooms</li>
-
-<li>✔ Video Conferencing</li>
-
-<li>✔ Digital Signage</li>
-
-<li>✔ Control Systems</li>
-
-<li>✔ Enterprise Networking</li>
-
-<li>✔ Managed Services</li>
-
-</ul>
-
-<a href="#">
-
-Read More
-
-</a>
+Cisco
 
 </div>
 
-<div class="about-right">
+<div class="partner-item">
 
-<div class="about-box">
+Crestron
 
-<h3>
+</div>
 
-Why Choose Us
+<div class="partner-item">
 
-</h3>
+Logitech
 
-<p>
+</div>
 
-End-to-End Design
+<div class="partner-item">
 
-Supply
+Samsung
 
-Installation
+</div>
 
-Training
+<div class="partner-item">
 
-Support
+LG
 
-</p>
+</div>
+
+<div class="partner-item">
+
+Yealink
+
+</div>
+
+<div class="partner-item">
+
+QSC
+
+</div>
+
+<div class="partner-item">
+
+Poly
 
 </div>
 
@@ -345,334 +408,6 @@ Support
 </div>
 
 </section>
-
-<!-- ================= Solutions ================= -->
-
-<section class="solutions">
-
-<div class="container">
-
-<div class="section-title">
-
-<h5>OUR SOLUTIONS</h5>
-
-<h2>
-
-Integrated Technology Solutions
-
-</h2>
-
-</div>
-
-<div class="solution-grid">
-
-<div class="solution-card">
-
-<i class="fa-solid fa-chalkboard"></i>
-
-<h3>
-
-Meeting Rooms
-
-</h3>
-
-<p>
-
-Modern Collaboration Spaces
-
-</p>
-
-</div>
-
-<div class="solution-card">
-
-<i class="fa-solid fa-school"></i>
-
-<h3>
-
-Education
-
-</h3>
-
-<p>
-
-Interactive Learning
-
-</p>
-
-</div>
-
-<div class="solution-card">
-
-<i class="fa-solid fa-hospital"></i>
-
-<h3>
-
-Healthcare
-
-</h3>
-
-<p>
-
-Digital Healthcare
-
-</p>
-
-</div>
-
-<div class="solution-card">
-
-<i class="fa-solid fa-building"></i>
-
-<h3>
-
-Corporate
-
-</h3>
-
-<p>
-
-Smart Offices
-
-</p>
-
-</div>
-
-<div class="solution-card">
-
-<i class="fa-solid fa-landmark"></i>
-
-<h3>
-
-Government
-
-</h3>
-
-<p>
-
-Mission Critical AV
-
-</p>
-
-</div>
-
-<div class="solution-card">
-
-<i class="fa-solid fa-network-wired"></i>
-
-<h3>
-
-IT Infrastructure
-
-</h3>
-
-<p>
-
-Reliable Connectivity
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= Why PixelTone ================= -->
-
-<section class="why">
-
-<div class="container">
-
-<h2>
-
-Why PixelTone?
-
-</h2>
-
-<div class="why-grid">
-
-<div>
-
-<h3>Premium Brands</h3>
-
-<p>
-
-Global Technology Partners
-
-</p>
-
-</div>
-
-<div>
-
-<h3>Experienced Engineers</h3>
-
-<p>
-
-Certified Professionals
-
-</p>
-
-</div>
-
-<div>
-
-<h3>Pan India Support</h3>
-
-<p>
-
-Deployment & Maintenance
-
-</p>
-
-</div>
-
-<div>
-
-<h3>Custom Integration</h3>
-
-<p>
-
-Tailored Enterprise Solutions
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= CTA ================= -->
-
-<section class="cta">
-
-<div class="container">
-
-<h2>
-
-Ready to Transform Your Workplace?
-
-</h2>
-
-<p>
-
-Let's build the future of collaboration together.
-
-</p>
-
-<a href="#">
-
-Request Consultation
-
-</a>
-
-</div>
-
-</section>
-
-<!-- ================= Footer ================= -->
-
-<footer>
-
-<div class="container">
-
-<div class="footer-col">
-
-<h3>PixelTone Technologies</h3>
-
-<p>
-
-Audio Visual
-
-Unified Communications
-
-IT Infrastructure
-
-Smart Workplace Solutions
-
-</p>
-
-</div>
-
-<div class="footer-col">
-
-<h4>Quick Links</h4>
-
-<ul>
-
-<li><a href="#">Home</a></li>
-
-<li><a href="#">Solutions</a></li>
-
-<li><a href="#">Services</a></li>
-
-<li><a href="#">About</a></li>
-
-<li><a href="#">Contact</a></li>
-
-</ul>
-
-</div>
-
-<div class="footer-col">
-
-<h4>Solutions</h4>
-
-<ul>
-
-<li>Meeting Rooms</li>
-
-<li>Video Conferencing</li>
-
-<li>Networking</li>
-
-<li>Digital Signage</li>
-
-<li>Control Systems</li>
-
-</ul>
-
-</div>
-
-<div class="footer-col">
-
-<h4>Contact</h4>
-
-<p>
-
-India
-
-</p>
-
-<p>
-
-info@pixeltone.in
-
-</p>
-
-<p>
-
-+91 XXXXX XXXXX
-
-</p>
-
-</div>
-
-</div>
-
-<div class="copyright">
-
-© 2026 PixelTone Technologies. All Rights Reserved.
-
-</div>
-
-</footer>
 
 <script src="script.js"></script>
 
