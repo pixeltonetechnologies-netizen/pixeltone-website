@@ -4,17 +4,131 @@
 <head>
 
 <meta charset="UTF-8">
-
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>PixelTone Technologies | Technology Integration Company</title>
 
-<meta name="description" content="PixelTone Technologies delivers enterprise Audio Visual, Unified Communications and IT Infrastructure solutions across India.">
+<meta name="description"
+content="PixelTone Technologies is a leading Technology Integration Company delivering Audio Visual, Unified Communications and IT Infrastructure Solutions across India.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-<style>
+<link rel="stylesheet" href="assets/css/style.css">
 
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<a href="index.html" class="logo">
+
+<img src="assets/images/logo.png" alt="PixelTone">
+
+</a>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="solutions.html">Solutions</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<a href="contact.html" class="btn-red">
+
+Get Consultation
+
+</a>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="container hero-grid">
+
+<div class="hero-left">
+
+<div class="badge">
+
+TECHNOLOGY INTEGRATION COMPANY
+
+</div>
+
+<h1>
+
+Designing Intelligent Spaces.
+
+Building Connected Experiences.
+
+</h1>
+
+<p>
+
+PixelTone Technologies delivers premium Audio Visual,
+Unified Communications and IT Infrastructure solutions
+that empower modern organizations with smarter,
+connected and future-ready workspaces.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="solutions.html" class="btn-red">
+
+Explore Solutions
+
+</a>
+
+<a href="contact.html" class="btn-outline">
+
+Talk to an Expert
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="glass-card">
+
+<img src="assets/images/logo.png">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
 *{
 margin:0;
 padding:0;
@@ -27,18 +141,41 @@ scroll-behavior:smooth;
 
 body{
 
-font-family:Inter,sans-serif;
+font-family:'Inter',sans-serif;
+
 background:#050505;
+
 color:#ffffff;
+
 overflow-x:hidden;
 
 }
 
-a{
-text-decoration:none;
+img{
+
+max-width:100%;
+
+display:block;
+
 }
 
-header{
+a{
+
+text-decoration:none;
+
+}
+
+.container{
+
+width:90%;
+
+max-width:1400px;
+
+margin:auto;
+
+}
+
+.header{
 
 position:fixed;
 
@@ -48,45 +185,51 @@ left:0;
 
 width:100%;
 
-padding:18px 8%;
+z-index:999;
 
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-background:rgba(8,8,8,.82);
+background:rgba(5,5,5,.82);
 
 backdrop-filter:blur(18px);
 
-border-bottom:1px solid rgba(255,255,255,.06);
+border-bottom:1px solid rgba(255,255,255,.05);
 
-z-index:9999;
+}
+
+.header .container{
+
+height:90px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
 
 }
 
 .logo img{
 
-height:58px;
+height:62px;
 
 }
 
-nav{
+nav ul{
 
 display:flex;
 
-gap:40px;
+gap:42px;
+
+list-style:none;
 
 }
 
 nav a{
 
-color:white;
+color:#fff;
 
 font-weight:500;
 
-transition:.35s;
+transition:.3s;
 
 }
 
@@ -96,129 +239,121 @@ color:#E30613;
 
 }
 
-.contact-btn{
+.btn-red{
 
-padding:14px 28px;
+padding:16px 32px;
 
 background:#E30613;
 
 border-radius:50px;
 
-color:white;
+color:#fff;
 
 font-weight:600;
 
-transition:.3s;
+transition:.35s;
 
 }
 
-.contact-btn:hover{
+.btn-red:hover{
 
-background:white;
+background:#fff;
 
-color:black;
+color:#111;
+
+}
+
+.btn-outline{
+
+padding:16px 32px;
+
+border:2px solid #E30613;
+
+border-radius:50px;
+
+color:#fff;
+
+font-weight:600;
 
 }
 
 .hero{
 
-position:relative;
-
 height:100vh;
+
+position:relative;
 
 display:flex;
 
 align-items:center;
 
-padding:0 8%;
+background:
 
-overflow:hidden;
+radial-gradient(circle at top right,#5d0000,transparent 35%),
+
+linear-gradient(#050505,#0d0d0d);
 
 }
 
-.hero::before{
-
-content:"";
+.overlay{
 
 position:absolute;
 
-width:900px;
+width:100%;
 
-height:900px;
+height:100%;
 
-background:radial-gradient(circle,#E3061330,transparent);
+background:
 
-right:-250px;
-
-top:-200px;
-
-filter:blur(60px);
+linear-gradient(90deg,#000 0%,transparent 60%);
 
 }
 
-.hero::after{
+.hero-grid{
 
-content:"";
+display:grid;
 
-position:absolute;
+grid-template-columns:1fr 1fr;
 
-width:650px;
+align-items:center;
 
-height:650px;
-
-background:radial-gradient(circle,#ffffff10,transparent);
-
-left:-250px;
-
-bottom:-200px;
-
-filter:blur(80px);
-
-}
-
-.hero-content{
-
-width:55%;
+gap:80px;
 
 position:relative;
 
-z-index:2;
+z-index:5;
 
 }
 
-.tag{
+.badge{
 
 display:inline-block;
 
-padding:12px 22px;
+padding:12px 24px;
 
-background:#151515;
+border:1px solid rgba(255,255,255,.1);
 
-border:1px solid rgba(255,255,255,.08);
-
-border-radius:50px;
+border-radius:40px;
 
 color:#E30613;
 
 margin-bottom:35px;
 
-font-size:14px;
+font-size:13px;
 
 letter-spacing:2px;
-
-text-transform:uppercase;
 
 }
 
 .hero h1{
 
-font-size:78px;
+font-family:'Manrope',sans-serif;
 
-font-family:Manrope;
+font-size:74px;
 
 font-weight:800;
 
-line-height:1.05;
+line-height:1.08;
 
 margin-bottom:30px;
 
@@ -230,11 +365,11 @@ font-size:20px;
 
 line-height:1.9;
 
-color:#bfbfbf;
-
-max-width:700px;
+color:#b8b8b8;
 
 margin-bottom:45px;
+
+max-width:650px;
 
 }
 
@@ -246,266 +381,18 @@ gap:20px;
 
 }
 
-.btn-red{
+.glass-card{
 
-padding:18px 38px;
-
-background:#E30613;
-
-border-radius:60px;
-
-color:white;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-.btn-red:hover{
-
-background:white;
-
-color:black;
-
-}
-
-.btn-outline{
-
-padding:18px 38px;
-
-border:2px solid #E30613;
-
-border-radius:60px;
-
-color:white;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-.btn-outline:hover{
-
-background:#E30613;
-
-}
-
-.hero-right{
-
-position:absolute;
-
-right:7%;
-
-top:53%;
-
-transform:translateY(-50%);
-
-width:38%;
-
-}
-
-.hero-card{
-
-background:linear-gradient(160deg,#161616,#0a0a0a);
+background:rgba(255,255,255,.04);
 
 border:1px solid rgba(255,255,255,.08);
 
-border-radius:30px;
+backdrop-filter:blur(20px);
 
-padding:45px;
+padding:70px;
 
-box-shadow:0 40px 80px rgba(0,0,0,.55);
+border-radius:32px;
 
-}
-
-.hero-card img{
-
-width:100%;
-
-display:block;
+box-shadow:0 30px 70px rgba(0,0,0,.5);
 
 }
-
-.scroll{
-
-position:absolute;
-
-bottom:40px;
-
-left:50%;
-
-transform:translateX(-50%);
-
-font-size:14px;
-
-letter-spacing:5px;
-
-color:#888;
-
-text-transform:uppercase;
-
-}
-
-@media(max-width:991px){
-
-header{
-
-padding:18px 30px;
-
-}
-
-nav{
-
-display:none;
-
-}
-
-.hero{
-
-padding:150px 30px;
-
-height:auto;
-
-flex-direction:column;
-
-}
-
-.hero-content{
-
-width:100%;
-
-text-align:center;
-
-}
-
-.hero h1{
-
-font-size:52px;
-
-}
-
-.hero-right{
-
-position:relative;
-
-width:100%;
-
-right:auto;
-
-top:auto;
-
-transform:none;
-
-margin-top:70px;
-
-}
-
-.hero-buttons{
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-}
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<a class="logo" href="#">
-
-<img src="assets/images/logo.png">
-
-</a>
-
-<nav>
-
-<a href="#">Home</a>
-
-<a href="#">Solutions</a>
-
-<a href="#">Services</a>
-
-<a href="#">About</a>
-
-<a href="#">Contact</a>
-
-</nav>
-
-<a href="#" class="contact-btn">
-
-Get Consultation
-
-</a>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<div class="tag">
-
-Technology Integration Company
-
-</div>
-
-<h1>
-
-Designing Intelligent Spaces For Modern Enterprises
-
-</h1>
-
-<p>
-
-PixelTone Technologies engineers next-generation Audio Visual, Unified Communications and IT Infrastructure solutions that transform workplaces into intelligent, connected and collaborative environments.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#" class="btn-red">
-
-Explore Solutions
-
-</a>
-
-<a href="#" class="btn-outline">
-
-Contact Us
-
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-right">
-
-<div class="hero-card">
-
-<img src="assets/images/logo.png">
-
-</div>
-
-</div>
-
-<div class="scroll">
-
-SCROLL
-
-</div>
-
-</section>
-
-</body>
-
-</html>
