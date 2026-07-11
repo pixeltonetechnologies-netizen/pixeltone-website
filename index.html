@@ -4,11 +4,14 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PixelTone Technologies</title>
+<title>PixelTone Technologies | Technology Integration Company</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<meta name="description" content="PixelTone Technologies delivers enterprise Audio Visual, Unified Communications and IT Infrastructure solutions across India.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -24,9 +27,9 @@ scroll-behavior:smooth;
 
 body{
 
-font-family:'Inter',sans-serif;
-background:#ffffff;
-color:#222;
+font-family:Inter,sans-serif;
+background:#050505;
+color:#ffffff;
 overflow-x:hidden;
 
 }
@@ -38,120 +41,204 @@ text-decoration:none;
 header{
 
 position:fixed;
+
 top:0;
+
 left:0;
+
 width:100%;
-padding:22px 8%;
+
+padding:18px 8%;
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
-background:rgba(255,255,255,.92);
-backdrop-filter:blur(14px);
-z-index:999;
+
+background:rgba(8,8,8,.82);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(255,255,255,.06);
+
+z-index:9999;
 
 }
 
-.logo{
+.logo img{
 
-font-size:32px;
-font-family:Manrope;
-font-weight:800;
-color:#0B1F3A;
+height:58px;
 
 }
 
 nav{
 
 display:flex;
-gap:34px;
+
+gap:40px;
 
 }
 
 nav a{
 
-color:#222;
-font-weight:600;
-transition:.3s;
+color:white;
+
+font-weight:500;
+
+transition:.35s;
 
 }
 
 nav a:hover{
 
-color:#0057ff;
+color:#E30613;
+
+}
+
+.contact-btn{
+
+padding:14px 28px;
+
+background:#E30613;
+
+border-radius:50px;
+
+color:white;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.contact-btn:hover{
+
+background:white;
+
+color:black;
 
 }
 
 .hero{
 
-min-height:100vh;
+position:relative;
+
+height:100vh;
 
 display:flex;
 
-justify-content:space-between;
-
 align-items:center;
 
-padding:130px 8% 80px;
+padding:0 8%;
 
-background:linear-gradient(135deg,#eef6ff,#ffffff);
-
-}
-
-.left{
-
-width:50%;
+overflow:hidden;
 
 }
 
-.left span{
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:900px;
+
+height:900px;
+
+background:radial-gradient(circle,#E3061330,transparent);
+
+right:-250px;
+
+top:-200px;
+
+filter:blur(60px);
+
+}
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:650px;
+
+height:650px;
+
+background:radial-gradient(circle,#ffffff10,transparent);
+
+left:-250px;
+
+bottom:-200px;
+
+filter:blur(80px);
+
+}
+
+.hero-content{
+
+width:55%;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.tag{
 
 display:inline-block;
 
-padding:10px 20px;
+padding:12px 22px;
 
-background:#dcecff;
+background:#151515;
 
-color:#0057ff;
+border:1px solid rgba(255,255,255,.08);
 
-border-radius:40px;
+border-radius:50px;
+
+color:#E30613;
+
+margin-bottom:35px;
 
 font-size:14px;
 
-font-weight:600;
+letter-spacing:2px;
 
-margin-bottom:30px;
+text-transform:uppercase;
 
 }
 
-.left h1{
+.hero h1{
 
-font-size:72px;
+font-size:78px;
 
 font-family:Manrope;
 
 font-weight:800;
 
-line-height:1.1;
-
-color:#0B1F3A;
+line-height:1.05;
 
 margin-bottom:30px;
 
 }
 
-.left p{
+.hero p{
 
 font-size:20px;
 
-line-height:1.8;
+line-height:1.9;
 
-color:#666;
+color:#bfbfbf;
 
-margin-bottom:40px;
+max-width:700px;
+
+margin-bottom:45px;
 
 }
 
-.buttons{
+.hero-buttons{
 
 display:flex;
 
@@ -159,11 +246,15 @@ gap:20px;
 
 }
 
-.btn{
+.btn-red{
 
-padding:16px 34px;
+padding:18px 38px;
 
-border-radius:50px;
+background:#E30613;
+
+border-radius:60px;
+
+color:white;
 
 font-weight:600;
 
@@ -171,71 +262,89 @@ transition:.3s;
 
 }
 
-.primary{
+.btn-red:hover{
 
-background:#0057ff;
+background:white;
+
+color:black;
+
+}
+
+.btn-outline{
+
+padding:18px 38px;
+
+border:2px solid #E30613;
+
+border-radius:60px;
 
 color:white;
 
-}
+font-weight:600;
 
-.primary:hover{
-
-background:#003fc0;
+transition:.3s;
 
 }
 
-.secondary{
+.btn-outline:hover{
 
-border:2px solid #0057ff;
-
-color:#0057ff;
+background:#E30613;
 
 }
 
-.secondary:hover{
+.hero-right{
 
-background:#0057ff;
+position:absolute;
 
-color:white;
+right:7%;
 
-}
+top:53%;
 
-.right{
+transform:translateY(-50%);
 
-width:44%;
-
-display:flex;
-
-justify-content:center;
+width:38%;
 
 }
 
 .hero-card{
 
+background:linear-gradient(160deg,#161616,#0a0a0a);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:30px;
+
+padding:45px;
+
+box-shadow:0 40px 80px rgba(0,0,0,.55);
+
+}
+
+.hero-card img{
+
 width:100%;
 
-height:520px;
+display:block;
 
-border-radius:28px;
+}
 
-background:linear-gradient(145deg,#0B1F3A,#0057ff);
+.scroll{
 
-display:flex;
+position:absolute;
 
-justify-content:center;
+bottom:40px;
 
-align-items:center;
+left:50%;
 
-color:white;
+transform:translateX(-50%);
 
-font-size:38px;
+font-size:14px;
 
-font-family:Manrope;
+letter-spacing:5px;
 
-font-weight:800;
+color:#888;
 
-box-shadow:0 40px 90px rgba(0,87,255,.25);
+text-transform:uppercase;
 
 }
 
@@ -243,63 +352,61 @@ box-shadow:0 40px 90px rgba(0,87,255,.25);
 
 header{
 
-padding:20px;
-
-flex-direction:column;
-
-gap:20px;
+padding:18px 30px;
 
 }
 
 nav{
 
-flex-wrap:wrap;
-
-justify-content:center;
+display:none;
 
 }
 
 .hero{
 
+padding:150px 30px;
+
+height:auto;
+
 flex-direction:column;
+
+}
+
+.hero-content{
+
+width:100%;
 
 text-align:center;
 
-padding-top:180px;
+}
+
+.hero h1{
+
+font-size:52px;
 
 }
 
-.left{
+.hero-right{
+
+position:relative;
 
 width:100%;
 
-}
+right:auto;
 
-.right{
+top:auto;
 
-width:100%;
+transform:none;
 
-margin-top:60px;
-
-}
-
-.left h1{
-
-font-size:46px;
+margin-top:70px;
 
 }
 
-.buttons{
+.hero-buttons{
 
 justify-content:center;
 
 flex-wrap:wrap;
-
-}
-
-.hero-card{
-
-height:320px;
 
 }
 
@@ -313,11 +420,11 @@ height:320px;
 
 <header>
 
-<div class="logo">
+<a class="logo" href="#">
 
-PixelTone
+<img src="assets/images/logo.png">
 
-</div>
+</a>
 
 <nav>
 
@@ -333,35 +440,45 @@ PixelTone
 
 </nav>
 
+<a href="#" class="contact-btn">
+
+Get Consultation
+
+</a>
+
 </header>
 
 <section class="hero">
 
-<div class="left">
+<div class="hero-content">
 
-<span>TECHNOLOGY INTEGRATION COMPANY</span>
+<div class="tag">
+
+Technology Integration Company
+
+</div>
 
 <h1>
 
-Designing Intelligent Spaces For Modern Businesses
+Designing Intelligent Spaces For Modern Enterprises
 
 </h1>
 
 <p>
 
-PixelTone Technologies delivers Audio Visual, Unified Communications and IT Infrastructure solutions that help organizations collaborate better, communicate smarter and work more efficiently.
+PixelTone Technologies engineers next-generation Audio Visual, Unified Communications and IT Infrastructure solutions that transform workplaces into intelligent, connected and collaborative environments.
 
 </p>
 
-<div class="buttons">
+<div class="hero-buttons">
 
-<a href="#" class="btn primary">
+<a href="#" class="btn-red">
 
 Explore Solutions
 
 </a>
 
-<a href="#" class="btn secondary">
+<a href="#" class="btn-outline">
 
 Contact Us
 
@@ -371,13 +488,19 @@ Contact Us
 
 </div>
 
-<div class="right">
+<div class="hero-right">
 
 <div class="hero-card">
 
-Future Workspace
+<img src="assets/images/logo.png">
 
 </div>
+
+</div>
+
+<div class="scroll">
+
+SCROLL
 
 </div>
 
