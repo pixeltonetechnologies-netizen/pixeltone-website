@@ -1,24 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PixelTone Technologies | Audio Visual & IT Solutions</title>
+<title>PixelTone Technologies</title>
 
-<meta name="description" content="PixelTone Technologies is a leading Audio Visual, Unified Communication and IT Infrastructure System Integration Company in India.">
-
-<meta name="keywords" content="AV Integrator, Meeting Room, Boardroom, Video Wall, Smart Classroom, Digital Signage, Audio Visual India">
-
-<meta name="author" content="PixelTone Technologies">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -28,100 +18,290 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 
 font-family:'Inter',sans-serif;
 background:#ffffff;
-color:#1b1b1b;
+color:#222;
 overflow-x:hidden;
 
 }
 
-h1,h2,h3,h4,h5{
+a{
+text-decoration:none;
+}
 
-font-family:'Manrope',sans-serif;
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:22px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.92);
+backdrop-filter:blur(14px);
+z-index:999;
 
 }
 
-.navbar{
+.logo{
 
-padding:18px 0;
-background:white;
-box-shadow:0 10px 30px rgba(0,0,0,.05);
-
-}
-
-.navbar-brand{
-
+font-size:32px;
+font-family:Manrope;
 font-weight:800;
-font-size:28px;
 color:#0B1F3A;
 
 }
 
-.nav-link{
+nav{
 
-margin-left:22px;
-font-weight:600;
+display:flex;
+gap:34px;
+
+}
+
+nav a{
+
 color:#222;
+font-weight:600;
+transition:.3s;
 
 }
 
-.nav-link:hover{
+nav a:hover{
 
-color:#0057FF;
-
-}
-
-.btn-primary{
-
-background:#0057FF;
-border:none;
-padding:13px 26px;
-border-radius:40px;
+color:#0057ff;
 
 }
 
 .hero{
 
-height:100vh;
+min-height:100vh;
+
 display:flex;
+
+justify-content:space-between;
+
 align-items:center;
-background:linear-gradient(135deg,#f8fbff,#eef5ff);
+
+padding:130px 8% 80px;
+
+background:linear-gradient(135deg,#eef6ff,#ffffff);
 
 }
 
-.hero h1{
+.left{
 
-font-size:64px;
+width:50%;
+
+}
+
+.left span{
+
+display:inline-block;
+
+padding:10px 20px;
+
+background:#dcecff;
+
+color:#0057ff;
+
+border-radius:40px;
+
+font-size:14px;
+
+font-weight:600;
+
+margin-bottom:30px;
+
+}
+
+.left h1{
+
+font-size:72px;
+
+font-family:Manrope;
+
 font-weight:800;
-line-height:1.2;
-margin-bottom:25px;
+
+line-height:1.1;
+
+color:#0B1F3A;
+
+margin-bottom:30px;
 
 }
 
-.hero p{
+.left p{
 
 font-size:20px;
+
 line-height:1.8;
-margin-bottom:35px;
-color:#555;
+
+color:#666;
+
+margin-bottom:40px;
 
 }
 
-.hero img{
+.buttons{
+
+display:flex;
+
+gap:20px;
+
+}
+
+.btn{
+
+padding:16px 34px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.primary{
+
+background:#0057ff;
+
+color:white;
+
+}
+
+.primary:hover{
+
+background:#003fc0;
+
+}
+
+.secondary{
+
+border:2px solid #0057ff;
+
+color:#0057ff;
+
+}
+
+.secondary:hover{
+
+background:#0057ff;
+
+color:white;
+
+}
+
+.right{
+
+width:44%;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-card{
 
 width:100%;
-border-radius:20px;
+
+height:520px;
+
+border-radius:28px;
+
+background:linear-gradient(145deg,#0B1F3A,#0057ff);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:white;
+
+font-size:38px;
+
+font-family:Manrope;
+
+font-weight:800;
+
+box-shadow:0 40px 90px rgba(0,87,255,.25);
 
 }
 
-footer{
+@media(max-width:991px){
 
-padding:40px 0;
-background:#0B1F3A;
-color:white;
+header{
+
+padding:20px;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero{
+
+flex-direction:column;
+
 text-align:center;
+
+padding-top:180px;
+
+}
+
+.left{
+
+width:100%;
+
+}
+
+.right{
+
+width:100%;
+
+margin-top:60px;
+
+}
+
+.left h1{
+
+font-size:46px;
+
+}
+
+.buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.hero-card{
+
+height:320px;
+
+}
 
 }
 
@@ -131,83 +311,71 @@ text-align:center;
 
 <body>
 
-<nav class="navbar navbar-expand-lg">
+<header>
 
-<div class="container">
-
-<a class="navbar-brand" href="#">
+<div class="logo">
 
 PixelTone
 
-</a>
-
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-
-<span class="navbar-toggler-icon"></span>
-
-</button>
-
-<div class="collapse navbar-collapse" id="menu">
-
-<ul class="navbar-nav ms-auto">
-
-<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-
-<li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
-
-<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-
-<li class="nav-item"><a class="nav-link" href="#">Industries</a></li>
-
-<li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-
-<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-
-<li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
-
-<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-
-</ul>
-
 </div>
 
-</div>
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">Solutions</a>
+
+<a href="#">Services</a>
+
+<a href="#">About</a>
+
+<a href="#">Contact</a>
 
 </nav>
 
+</header>
+
 <section class="hero">
 
-<div class="container">
+<div class="left">
 
-<div class="row align-items-center">
-
-<div class="col-lg-6">
+<span>TECHNOLOGY INTEGRATION COMPANY</span>
 
 <h1>
 
-Designing Intelligent Spaces
+Designing Intelligent Spaces For Modern Businesses
 
 </h1>
 
 <p>
 
-PixelTone Technologies delivers enterprise-grade Audio Visual, Unified Communications, Smart Workplace and IT Infrastructure solutions across India.
+PixelTone Technologies delivers Audio Visual, Unified Communications and IT Infrastructure solutions that help organizations collaborate better, communicate smarter and work more efficiently.
 
 </p>
 
-<a href="#" class="btn btn-primary">
+<div class="buttons">
+
+<a href="#" class="btn primary">
 
 Explore Solutions
 
 </a>
 
+<a href="#" class="btn secondary">
+
+Contact Us
+
+</a>
+
 </div>
 
-<div class="col-lg-6 text-center">
-
-<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200" alt="Meeting Room">
-
 </div>
+
+<div class="right">
+
+<div class="hero-card">
+
+Future Workspace
 
 </div>
 
@@ -215,17 +383,6 @@ Explore Solutions
 
 </section>
 
-<footer>
-
-<div class="container">
-
-© 2026 PixelTone Technologies
-
-</div>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
+
 </html>
