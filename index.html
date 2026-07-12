@@ -307,7 +307,8 @@
   }
   @media (max-width:960px){
     .hero-grid{grid-template-columns:1fr;}
-    .signature{order:-1; height:320px;}
+    .signature{order:1; height:320px;}
+    .hero-grid > div:first-child{order:0;}
   }
 
   /* ---------- Section headers ---------- */
